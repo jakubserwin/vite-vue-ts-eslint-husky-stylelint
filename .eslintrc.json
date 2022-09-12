@@ -1,0 +1,38 @@
+{
+    "root": true,
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "plugin:vue/vue3-strongly-recommended",
+      "plugin:vue/vue3-recommended",
+      "@vue/typescript/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2022
+    },
+    "rules": {
+      "@typescript-eslint/explicit-function-return-type": ["error"],
+      "vue/no-setup-props-destructure": 0,
+      "no-console": [2, {
+        "allow": ["warn", "error", "info"]
+      }],
+      "@typescript-eslint/ban-types": [1, {
+        "types": {
+          "Ref": "Use ref<type>",
+          "ComputedRef": "Use computed<type>"
+        }
+      }],
+      "max-depth": [2, {
+        "max": 2
+      }],
+      "max-lines-per-function": [2, {
+        "max": 220
+      }],
+      "semi": ["error", "never"],
+      "@typescript-eslint/semi": "off"
+    }
+  }
+  
